@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 // import Hello from './step1/Hello';
 // import Porps from './step2/props'
 // import Wrapper from './step2/Wrapper';
 // import Counter from './step3/Counter';
 // import InputSample from './step4/InputSample';
 import UserList from './step5/UserList';
-import CreateUser from './step5/CreateUser';
 import './App.css';
 
 
@@ -65,20 +64,17 @@ function App() {
     {
       id: 1,
       username: 'velopert',
-      email: 'public.velopert@gmail.com',
-      active: true
+      email: 'public.velopert@gmail.com'
     },
     {
       id: 2,
       username: 'tester',
-      email: 'tester@example.com',
-      active: false
+      email: 'tester@example.com'
     },
     {
       id: 3,
       username: 'liz',
-      email: 'liz@example.com',
-      active: false
+      email: 'liz@example.com'
     }
   ]);
 
@@ -97,19 +93,6 @@ function App() {
     });
     nextId.current += 1;
   };
-
-  const onRemove = id => {
-    // user.id 가 파라미터로 일치하지 않는 원소만 추출해서 새로운 배열을 만듬
-    // = user.id 가 id 인 것을 제거함
-    setUsers(users.filter(user => user.id !== id));
-  };
-  const onToggle = id => {
-    setUsers(
-      users.map(user =>
-        user.id === id ? { ...user, active: !user.active } : user
-      )
-    );
-  };
   return (
     <>
       <CreateUser
@@ -118,7 +101,7 @@ function App() {
         onChange={onChange}
         onCreate={onCreate}
       />
-      <UserList users={users} onRemove={onRemove} onToggle={onToggle} />
+      <UserList users={users} />
     </>
   );
 }
