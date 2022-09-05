@@ -1,12 +1,9 @@
 import React from 'react';
-// import Hello from './step1/Hello';
-import Porps from './step2/props'
-import Wrapper from './step2/Wrapper';
+import Hello from './step1/Hello';
 import './App.css';
 
 
 function App() {
-  // step1 
   // const name = 'react';
   // const style = {
   //   backgroundColor: 'black',
@@ -19,19 +16,14 @@ function App() {
   //   <>
   //     {/* 주석은 화면에 보이지 않습니다 */}
   //     <Hello 
-  //        열리는 태그 내부에서는 이렇게 주석을 작성 할 수 있습니다.
+  //       // 열리는 태그 내부에서는 이렇게 주석을 작성 할 수 있습니다.
   //     />
   //     <div style={style}>{name}</div>
   //     <div className="gray-box"></div>
   //   </>
   // );
-
-  //step2
   return (
-    <Wrapper>
-      <Porps name="react" color="red"/>
-      <Porps color="pink"/>
-    </Wrapper>
+    <Hello name="react" />
   );
 }
 

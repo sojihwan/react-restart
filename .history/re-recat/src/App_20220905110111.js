@@ -1,12 +1,11 @@
 import React from 'react';
 // import Hello from './step1/Hello';
 import Porps from './step2/props'
-import Wrapper from './step2/Wrapper';
 import './App.css';
 
 
 function App() {
-  // step1 
+  // s
   // const name = 'react';
   // const style = {
   //   backgroundColor: 'black',
@@ -26,12 +25,9 @@ function App() {
   //   </>
   // );
 
-  //step2
+
   return (
-    <Wrapper>
-      <Porps name="react" color="red"/>
-      <Porps color="pink"/>
-    </Wrapper>
+    <Porps name="react" />
   );
 }
 

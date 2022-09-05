@@ -28,10 +28,10 @@ function App() {
 
   //step2
   return (
-    <Wrapper>
+    <>
       <Porps name="react" color="red"/>
       <Porps color="pink"/>
-    </Wrapper>
+    </>
   );
 }
 
