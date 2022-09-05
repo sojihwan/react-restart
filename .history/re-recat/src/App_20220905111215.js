@@ -2,8 +2,7 @@ import React from 'react';
 // import Hello from './step1/Hello';
 // import Porps from './step2/props'
 // import Wrapper from './step2/Wrapper';
-// import Counter from './step3/Counter';
-import InputSample from './step4/InputSample';
+import Counter from './step3/Counter';
 import './App.css';
 
 
@@ -37,14 +36,6 @@ function App() {
   // );
 
   //step3
-  // return (
-  //   <Counter />
-  // );
-
-  //step4
-  return (
-    <InputSample />
-  );
 }
 
 export default App;

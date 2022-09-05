@@ -3,7 +3,6 @@ import React from 'react';
 // import Porps from './step2/props'
 // import Wrapper from './step2/Wrapper';
 // import Counter from './step3/Counter';
-import InputSample from './step4/InputSample';
 import './App.css';
 
 
