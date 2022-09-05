@@ -1,7 +1,5 @@
 import React from 'react';
-import Hello from './step1/Hello';
-import './App.css';
-
+import Hello from './step1/Hello'
 
 function App() {
   const name = 'react';
@@ -16,7 +14,6 @@ function App() {
     <>
       <Hello />
       <div style={style}>{name}</div>
-      <div className="gray-box"></div>
     </>
   );
 }

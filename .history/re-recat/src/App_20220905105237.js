@@ -1,5 +1,5 @@
 import React from 'react';
-import Hello from './step1/Hello';
+import Hello from './Hello';
 import './App.css';
 
 
