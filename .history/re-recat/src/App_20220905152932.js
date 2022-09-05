@@ -8,10 +8,6 @@ import UserList from './step5/UserList';
 import CreateUser from './step5/CreateUser';
 import './App.css';
 
-function countActiveUsers(users) {
-  console.log('활성 사용자 수를 세는중...');
-  return users.filter(user => user.active).length;
-}
 
 function App() {
   // step1 
